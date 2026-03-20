@@ -47,6 +47,7 @@ img {
   gap: var(--spacing-lg);
   width: 18rem;
   box-shadow: var(--shadow);
+  animation: slideDown 1s forwards;
 }
 
 .card__img {
@@ -100,7 +101,9 @@ img {
 
 @media (prefers-reduced-motion: reduce) {
   .card__link,
-  .card__link:hover {
+  .card__link:hover,
+  .card__container {
+    animation: none;
     transition: 0s;
     transition-duration: 0s;
     transition-property: none;
